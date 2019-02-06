@@ -2,6 +2,7 @@ php_value display_errors 0
 
 Deny from env=TelegramBot (like TwitterBot)
 
+ErrorDocument 403 error_pages/403.html
 ErrorDocument 404 error_pages/404.html
 
 RewriteBase /
