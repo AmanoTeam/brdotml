@@ -106,11 +106,11 @@
         url: $('#urlbox').val()
       },
       success: function(data) {
-        if (JSON.parse(data).ok == true) {
-          $('#urlbox').val(JSON.parse(data).link);
+        if (data.ok == true) {
+          $('#urlbox').val(data.link);
         }
         else {
-          $('#error_text').html('<a style="color: #f44336">'+JSON.parse(data).description+'</a>')
+          $('#error_text').html('<a style="color: #f44336">'+data.description+'</a>')
           $('#error_text').show()
         }
       }
