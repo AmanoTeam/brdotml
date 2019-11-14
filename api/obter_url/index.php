@@ -1,4 +1,5 @@
 <?php
+  header('Content-type: application/json');
   $urls = json_decode(file_get_contents('../../urls.json'), true);
   if (isset($_REQUEST["id"])) {
     $aff = $_REQUEST["id"];

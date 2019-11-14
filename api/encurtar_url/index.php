@@ -1,4 +1,5 @@
 <?php
+	header('Content-type: application/json');
 	if (isset($_REQUEST['url'])) {
 		if ($_REQUEST['url'] == '') {
 			echo json_encode(['ok' => false, 'description' => "A URL inserida não pode estar vazia."]);
